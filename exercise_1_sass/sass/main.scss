@@ -1,1 +1,25 @@
 @import "_reset";
+@import "_mixins";
+@import "_variables";
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.main {
+  display: inline-block;
+  height: 10rem;
+  width: 10%;
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+  margin-left: 0.3rem;
+  line-height: 10rem;
+}
+
+@include apply-background-color;
+
+.base-color {
+  background-color: $baseColor;
+}
