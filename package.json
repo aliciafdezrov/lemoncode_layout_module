@@ -1,0 +1,19 @@
+{
+  "name": "layout_exercises",
+  "version": "1.0.0",
+  "description": "Lemoncode layout exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliciafdezrov/lemoncode_layout_module.git"
+  },
+  "author": "Alicia Fernández Rovira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliciafdezrov/lemoncode_layout_module/issues"
+  },
+  "homepage": "https://github.com/aliciafdezrov/lemoncode_layout_module#readme"
+}
