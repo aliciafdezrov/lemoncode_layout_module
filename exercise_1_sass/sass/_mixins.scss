@@ -1,0 +1,19 @@
+@mixin lighten-color($baseColor, $percentage) {
+  background-color: lighten($baseColor, $percentage);
+}
+
+@mixin darken-color($baseColor, $percentage) {
+  background-color: darken($baseColor, $percentage);
+}
+
+@mixin apply-background-color($numberOfColumns: 4) {
+  @for $colNumber from 1 through $numberOfColumns {
+    .lighten-#{$colNumber} {
+      @include lighten-color($baseColor, $colNumber*10%);
+    }
+
+    .darken-#{$colNumber} {
+      @include darken-color($baseColor, $colNumber*10%);
+    }
+  }
+}
