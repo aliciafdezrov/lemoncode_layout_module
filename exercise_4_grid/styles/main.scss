@@ -1,12 +1,16 @@
 @import "_reset";
 
 body {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 .main-content {
+  min-height: 100%;
   display: grid;
+  grid-template-areas:
+          ". aside sectionA sectionA sectionA ."
+          ". aside sectionB sectionB sectionB.";
 }
 
 .aside-content {
