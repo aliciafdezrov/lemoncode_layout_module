@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "exercise1:start": "parcel ./exercise_1_sass/index.html",
-    "exercise2:start": "parcel ./exercise_2_sass/index.html"
+    "ex1:start": "parcel ./exercise_1_sass/index.html",
+    "ex2:start": "parcel ./exercise_2_sass/index.html",
+    "ex3:start": "parcel ./exercise_3_flexbox/index.html"
   },
   "repository": {
     "type": "git",
