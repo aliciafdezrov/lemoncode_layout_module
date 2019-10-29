@@ -3,6 +3,7 @@
 body {
   height: 100vh;
   width: 100vw;
+  font-size: 100%;
 }
 
 .main-content {
@@ -33,13 +34,13 @@ body {
   background: blue;
 }
 
-@media all and (max-width: 1175px) and (min-width: 866px) {
+@media all and (max-width: 80em) and (min-width: 60em) {
   .main-content {
     grid-template-columns: 1fr 5fr 7fr 1fr;
   }
 }
 
-@media all and (max-width: 866px) and (min-width: 476px) {
+@media all and (max-width: 60em) and (min-width: 30em) {
   .main-content {
     grid-template-columns: auto;
     grid-template-rows: 1fr 3fr 3fr;
@@ -55,7 +56,7 @@ body {
   }
 }
 
-@media all and (max-width: 476px) {
+@media all and (max-width: 30em) {
   .main-content {
     grid-template-columns: auto;
     grid-template-rows: 3% 1fr 1fr;
@@ -75,3 +76,9 @@ body {
     }
   }
 }
+
+
+/*1440
+1175
+866
+476*/
