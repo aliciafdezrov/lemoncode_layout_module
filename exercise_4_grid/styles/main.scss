@@ -8,14 +8,19 @@ body {
 .main-content {
   min-height: 100%;
   display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 10% 30% 50% 10%;
   grid-template-areas:
-          ". aside sectionA sectionA sectionA ."
-          ". aside sectionB sectionB sectionB.";
+          ". aside sectionA ."
+          ". aside sectionB .";
 }
 
 .aside-content {
   grid-area: aside;
   background: lightpink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .section-a {
@@ -27,3 +32,10 @@ body {
   grid-area: sectionB;
   background: blue;
 }
+
+@media all and (max-width: 1175px) and (min-width: 866px) {
+  .main-content {
+    grid-template-columns: 5% 35% 55% 5%;
+  }
+}
+
