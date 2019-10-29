@@ -54,3 +54,24 @@ body {
     align-items: center;
   }
 }
+
+@media all and (max-width: 476px) {
+  .main-content {
+    grid-template-columns: auto;
+    grid-template-rows: 3% 49% 49%;
+    grid-template-areas:
+            "aside"
+            "sectionA"
+            "sectionB";
+  }
+
+  .aside-content {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    a {
+      padding-right: 1%;
+    }
+  }
+}
