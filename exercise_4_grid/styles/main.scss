@@ -1,0 +1,27 @@
+@import "_reset";
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main-content {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: grid;
+}
+
+.aside-content {
+  grid-area: aside;
+  background: lightpink;
+}
+
+.section-a {
+  grid-area: sectionA;
+  background: yellow;
+}
+
+.section-b {
+  grid-area: sectionB;
+  background: blue;
+}
