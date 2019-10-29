@@ -39,3 +39,18 @@ body {
   }
 }
 
+@media all and (max-width: 866px) and (min-width: 476px) {
+  .main-content {
+    grid-template-columns: auto;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas:
+            "aside"
+            "sectionA"
+            "sectionB";
+  }
+
+  .aside-content {
+    flex-direction: row;
+    align-items: center;
+  }
+}
