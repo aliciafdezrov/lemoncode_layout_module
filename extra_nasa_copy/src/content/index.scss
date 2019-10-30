@@ -1,5 +1,7 @@
 @import "_reset";
 @import "_variables";
+@import "_navbar";
+@import "_main";
 
 body {
   height: 100vh;
@@ -7,52 +9,4 @@ body {
   color: $whiteColor;
   font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 12px;
-}
-
-.nav-section {
-  display: flex;
-  justify-content: space-evenly;
-  background-image: url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/starfield-banner.jpg");
-  margin-top: 5vh;
-}
-
-.nav {
-  display: inline-flex;
-  justify-content: flex-end;
-  width: 80vw;
-  align-items: center;
-  align-self: flex-start;
-
-  a {
-    color: $whiteColor;
-    text-decoration: none;
-    border-right: $greyColor solid 2px;
-    padding: 3vh 1.5vw;
-
-    &:hover {
-      background-color: $blueColor;
-    }
-
-    &:nth-child(7) {
-      border-right: none;
-    }
-  }
-
-  input {
-    color: $greyColor;
-    padding: 1.5% 1%;
-    font-size: 14px;
-    background: $darkgreyColor url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/search.svg") no-repeat right center;
-
-    &:focus {
-      border: $blueColor solid 2px;
-    }
-  }
-
-  button {
-    width: 5vw;
-    height: 5vh;
-    border: none;
-    background: $blackColor url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/share.svg") no-repeat center bottom;
-  }
 }
