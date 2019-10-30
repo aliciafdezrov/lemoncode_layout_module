@@ -12,7 +12,6 @@ Seguidamente, para probar cada ejercicio sólo hay que ejecutar su correspondien
 
 ```
 npm run ex1
-
 ```
 
 * Ejercicio 2: SASS
