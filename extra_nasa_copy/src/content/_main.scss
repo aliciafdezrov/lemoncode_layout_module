@@ -1,3 +1,19 @@
+.main-section {
+  height: 100%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: grid;
+  column-gap: 5px;
+  row-gap: 5px;
+  margin-top: 2vh;
+  grid-template-rows: repeat(4, 40%);
+  grid-template-areas:
+          "section1 section1 section2 section3"
+          "section1 section1 section4 section4"
+          "section5 section6 section6 section7"
+          "section8 section9 section10 section11";
+}
+
 .section-1 {
   grid-area: section1;
   background: $blackColor url("https://www.nasa.gov/sites/default/files/styles/2x2_cardfeed/public/thumbnails/image/zombie-16_0.jpg") center center no-repeat;
@@ -10,7 +26,7 @@
 
 .section-3 {
   grid-area: section3;
-  background-color: $blueColor;
+  background-color: lighten($blueColor, 20%);
 }
 
 .section-4 {
@@ -56,14 +72,4 @@
 .section-11 {
   grid-area: section11;
   background: $blackColor url("https://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/pia23468-1041.gif") center center no-repeat;
-}
-
-.main-section {
-  height: 100%;
-  display: grid;
-  grid-template-areas:
-          "section1 section1 section2 section3"
-          "section1 section1 section4 section4"
-          "section5 section6 section6 section7"
-          "section8 section9 section10 section11";
 }
