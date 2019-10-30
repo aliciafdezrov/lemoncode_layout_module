@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ex1:start": "parcel ./exercise_1_sass/index.html",
-    "ex2:start": "parcel ./exercise_2_sass/index.html",
-    "ex3:start": "parcel ./exercise_3_flexbox/index.html",
-    "ex4:start": "parcel ./exercise_4_grid/index.html"
+    "ex1": "parcel ./exercise_1_sass/index.html",
+    "ex2": "parcel ./exercise_2_sass/index.html",
+    "ex3": "parcel ./exercise_3_flexbox/index.html",
+    "ex4": "parcel ./exercise_4_grid/index.html"
   },
   "repository": {
     "type": "git",
