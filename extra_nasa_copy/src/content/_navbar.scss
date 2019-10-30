@@ -1,0 +1,89 @@
+
+.nav-section {
+}
+
+.upper-nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-image: url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/starfield-banner.jpg");
+  margin-top: 5vh;
+}
+
+.nav-a {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  align-self: flex-start;
+  align-content: space-between;
+
+  a {
+    color: $whiteColor;
+    text-decoration: none;
+    border-right: $greyColor solid 2px;
+    padding: 3vh 1.5vw;
+
+    &:hover {
+      background-color: $blueColor;
+    }
+
+    &:nth-child(7) {
+      border-right: none;
+    }
+  }
+
+  input {
+    color: $greyColor;
+    padding: 1.5% 1%;
+    font-size: 14px;
+    background: $darkgreyColor url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/search.svg") no-repeat right center;
+
+    &:focus {
+      border: $blueColor solid 2px;
+    }
+  }
+
+  button {
+    width: 5vw;
+    height: 5vh;
+    border: none;
+    background: $blackColor url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/share.svg") no-repeat center bottom;
+  }
+}
+
+.bottom-nav {
+  background-color: $greyColor;
+  z-index: 2;
+  margin-right: 15vw;
+  margin-top: 2vh;
+}
+
+.nav-b {
+  display: inline-flex;
+  justify-content: flex-start;
+
+  a {
+    background-color: $greyColor;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-decoration: none;
+    color: $whiteColor;
+    padding: 1vh;
+    border-right: lighten($greyColor, 20%) solid 1px;
+
+    &:focus, &:hover {
+      background-color: lighten($greyColor, 20%);
+    }
+
+    &:nth-child(9) {
+      border: none;
+    }
+  }
+}
+
+.nasa-logo {
+  position: absolute;
+  left: 0;
+  margin-left: 2vw;
+}
