@@ -2,9 +2,14 @@
 @import "_variables";
 @import "_navbar";
 @import "_main";
+@import "_footer";
+
+:root {
+  height: 100%;
+}
 
 body {
-  height: 100vh;
+  height: 100%;
   background: $blackColor;
   color: $whiteColor;
   font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
