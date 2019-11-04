@@ -31,3 +31,11 @@ npm run ex3
 ```
 npm run ex4
 ```
+
+* Extra: Copia de la página web de la NASA
+
+Copia del sitio web de la NASA (https://www.nasa.gov/) usando grid, sass y flexbox. Se ha replicado la distribución del espacio dentro del mismo y su respuesta frente a diferentes resoluciones, no el contenido en sí de las noticias (cambian cada día y no tenía mucho sentido).
+
+```
+npm run nasa-mock
+```
