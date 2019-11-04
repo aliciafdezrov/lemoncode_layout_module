@@ -1,0 +1,117 @@
+.main-section {
+  height: 100%;
+  margin-top: 25vh;
+}
+
+.grid-section {
+  display: grid;
+  column-gap: 5px;
+  row-gap: 5px;
+  height: 100%;
+  margin-left: 2vh;
+  grid-template-columns: repeat(4, 24%);
+  grid-template-rows: repeat(5, 40%);
+  grid-template-areas:
+          "section1 section1 section2 section3"
+          "section1 section1 section4 section4"
+          "section5 section6 section6 section7"
+          "section8 section9 section10 section11"
+          "footer footer footer footer";
+
+  p {
+    font-weight: bold;
+    color: $whiteColor;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 70rem) and (min-width: 50rem) {
+  .grid-section {
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: repeat(7, 40%);
+    grid-template-areas:
+            "section1 section1"
+            "section2 section3"
+            "section4 section5"
+            "section6 section7"
+            "section8 section9"
+            "section10 section11"
+            "footer footer";
+  }
+}
+
+@media all and (max-width: 50rem) {
+  .grid-section {
+    grid-template-columns: 98%;
+    grid-template-rows: repeat(12, 40%);
+    grid-template-areas:
+            "section1"
+            "section2"
+            "section3"
+            "section4"
+            "section5"
+            "section6"
+            "section7"
+            "section8"
+            "section9"
+            "section10"
+            "section11"
+            "footer";
+  }
+}
+
+
+.section-1 {
+  grid-area: section1;
+  background-color: $darkgreyColor;
+}
+
+.section-2 {
+  grid-area: section2;
+  background-color: $darkgreyColor;
+}
+
+.section-3 {
+  grid-area: section3;
+  background-color: $darkgreyColor;
+}
+
+.section-4 {
+  grid-area: section4;
+  background-color: $darkgreyColor;
+}
+
+.section-5 {
+  grid-area: section5;
+  background-color: $darkgreyColor;
+}
+
+.section-6 {
+  grid-area: section6;
+  background-color: $darkgreyColor;
+}
+
+.section-7 {
+  grid-area: section7;
+  background-color: $darkgreyColor;
+}
+
+.section-8 {
+  grid-area: section8;
+  background-color: $darkgreyColor;
+}
+
+.section-9 {
+  grid-area: section9;
+  background-color: $darkgreyColor;
+}
+
+.section-10 {
+  grid-area: section10;
+  background-color: $darkgreyColor;
+}
+
+.section-11 {
+  grid-area: section11;
+  background-color: $darkgreyColor;
+}

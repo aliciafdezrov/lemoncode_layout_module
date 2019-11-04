@@ -1,0 +1,137 @@
+.nav-section {
+  position: fixed;
+  top: 0;
+  background-color: $blackColor;
+  width: 78%
+}
+
+@media all and (max-width: 50rem) {
+  .nav-section {
+    width: 100%
+  }
+}
+
+.base-navigation {
+  background-image: url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/starfield-banner.jpg");
+  margin-top: 5vh;
+}
+
+.large-nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  @extend .base-navigation;
+}
+
+.small-nav {
+  margin-bottom: 2vh;
+  @extend .base-navigation
+}
+
+.principal-navigation {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+
+  a {
+    color: $whiteColor;
+    text-decoration: none;
+    border-right: $greyColor solid 2px;
+    padding: 3vh 1.5vw;
+
+    &:hover {
+      background-color: $blueColor;
+    }
+
+    &:nth-child(7) {
+      border-right: none;
+    }
+  }
+
+  input {
+    color: $greyColor;
+    padding: 1.5% 1%;
+    font-size: 14px;
+    background: $darkgreyColor url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/search.svg") no-repeat right center;
+
+    &:focus {
+      border: $blueColor solid 2px;
+    }
+  }
+}
+
+.bottom-nav {
+  background-color: $greyColor;
+  z-index: 2;
+  margin-right: 15vw;
+  margin-top: 2vh;
+}
+
+.secondary-navigation {
+  display: inline-flex;
+
+  a {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-decoration: none;
+    color: $whiteColor;
+    padding: 1vh;
+    border-right: lighten($greyColor, 20%) solid 1px;
+
+    &:focus, &:hover {
+      background-color: lighten($greyColor, 20%);
+    }
+
+    &:nth-child(9) {
+      border: none;
+    }
+  }
+}
+
+.nasa-logo {
+  position: absolute;
+  left: 0;
+  margin-left: 2vw;
+}
+
+@media all and (max-width: 70rem) {
+  .large-nav {
+    display: none;
+  }
+
+  .principal-navigation {
+    font-size: 22px;
+    a {
+      border: none;
+    }
+  }
+}
+
+@media all and (min-width: 70rem) {
+  .small-nav {
+    display: none;
+  }
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.share-button {
+  @extend .button;
+  background: $blackColor url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/share.svg") no-repeat center bottom;
+}
+
+.menu-button {
+  @extend .button;
+  background: $blackColor url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/menu.png") no-repeat center center;
+  background-size: 40px;
+}
+
+.search-button {
+  @extend .button;
+  background: $blackColor url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/search.svg") no-repeat center center;
+}

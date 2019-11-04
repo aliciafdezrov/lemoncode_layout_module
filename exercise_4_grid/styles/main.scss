@@ -1,18 +1,11 @@
 @import "_reset";
 
-body {
-  height: 100vh;
-  width: 100vw;
+:root {
+  height: 100%;
 }
 
-.main-content {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 2fr 4fr 6fr 2fr;
-  grid-template-areas:
-          ". aside sectionA ."
-          ". aside sectionB .";
+body {
+  height: 100%;
 }
 
 .aside-content {
@@ -31,6 +24,16 @@ body {
 .section-b {
   grid-area: sectionB;
   background: blue;
+}
+
+.main-content {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 4fr 6fr 2fr;
+  grid-template-areas:
+          ". aside sectionA ."
+          ". aside sectionB .";
 }
 
 @media all and (max-width: 80em) and (min-width: 60em) {
@@ -66,7 +69,6 @@ body {
   }
 
   .aside-content {
-    display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;
 

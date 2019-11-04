@@ -8,7 +8,8 @@
     "ex1": "parcel ./exercise_1_sass/index.html",
     "ex2": "parcel ./exercise_2_sass/index.html",
     "ex3": "parcel ./exercise_3_flexbox/index.html",
-    "ex4": "parcel ./exercise_4_grid/index.html"
+    "ex4": "parcel ./exercise_4_grid/index.html",
+    "nasa-mock": "parcel ./extra_nasa_copy/src/index.html"
   },
   "repository": {
     "type": "git",
