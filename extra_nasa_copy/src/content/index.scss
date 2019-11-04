@@ -15,3 +15,10 @@ body {
   font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 12px;
 }
+
+@media all and (min-width: 50rem) {
+  body {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
